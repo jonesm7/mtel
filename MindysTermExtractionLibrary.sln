@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTLS.TermExtractor", "src\NTLS.TermExtractor.csproj", "{C7AB242B-D20C-48D0-BE3F-E43276C8BA45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTLS.TermExtractor.Tests", "test\NTLS.TermExtractor.Tests.csproj", "{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46CDB74A-5DB4-4187-97FA-DF42A334A4D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{597E6B48-90A7-460B-979D-FA8DC4289AB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7AB242B-D20C-48D0-BE3F-E43276C8BA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AB242B-D20C-48D0-BE3F-E43276C8BA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AB242B-D20C-48D0-BE3F-E43276C8BA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AB242B-D20C-48D0-BE3F-E43276C8BA45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7AB242B-D20C-48D0-BE3F-E43276C8BA45} = {46CDB74A-5DB4-4187-97FA-DF42A334A4D6}
+		{8BFFCDFE-0FA3-4F67-93C3-368F9DF125E7} = {597E6B48-90A7-460B-979D-FA8DC4289AB7}
+	EndGlobalSection
+EndGlobal
