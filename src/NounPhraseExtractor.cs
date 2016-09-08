@@ -55,13 +55,10 @@ namespace NTLS.TermExtractor
                     {
                         continue;
                     }
-                    Console.WriteLine("cleanedCandidate: " + cleanedCandidate);
 
                     string original = stopRemoved;
-                    Console.WriteLine("original: " + original);
 
                     string normalizedCandidate = normalizer.Normalize(stopRemoved.ToLower()).Trim();
-                    Console.WriteLine("normalizedCandidate: " + normalizedCandidate);
 
                     string[] nElements = normalizedCandidate.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
                     if (nElements.Length < 1 || nElements.Length > RuntimeProperties.TERM_MAX_WORDS)
@@ -73,7 +70,6 @@ namespace NTLS.TermExtractor
                     // should be fixed. Ideally numbers should be chopped off as stop words.
                     if (RuntimeProperties.TERM_IGNORE_DIGITS && WordUtil.ContainsDigit(normalizedCandidate))
                     {
-                        Console.WriteLine("  . skipped - contains number");
                         continue;
                     }
                     if (!WordUtil.ContainsLetter(normalizedCandidate))
@@ -84,8 +80,6 @@ namespace NTLS.TermExtractor
                     {
                         continue;
                     }
-                    Console.WriteLine("cleanedCandidate <" + cleanedCandidate.ToLower() + "> "
-                        + " normalizedCandidate<" + normalizedCandidate + ">");
                     // TODO handle stem-changing irregular plurals correctly - their
                     // variants should be included but aren't
                     if (cleanedCandidate.ToLower().IndexOf(normalizedCandidate) != -1)

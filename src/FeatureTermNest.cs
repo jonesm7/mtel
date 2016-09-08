@@ -63,7 +63,7 @@ namespace NTLS.TermExtractor
             }
 
             result.Add(nest);
-            termNested.Add(nested, result);
+            termNested[nested] = result;
         }
     }
 }

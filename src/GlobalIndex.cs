@@ -150,9 +150,9 @@ namespace NTLS.TermExtractor
                 {
                     int varId = IndexTermVariant(variant);
                     variants.Add(varId);
-                    variantsToTerms.Add(varId, termId);
+                    variantsToTerms[varId] = termId;
                 }
-                termToVariants.Add(termId, variants);
+                termToVariants[termId] = variants;
             }
         }
 
@@ -184,7 +184,7 @@ namespace NTLS.TermExtractor
                 docs = new HashSet<int>();
             }
             docs.Add(document);
-            termToDocs.Add(term, docs);
+            termToDocs[term] = docs;
         }
 
         public void IndexDocWithCanonicalTerms(Document document, ISet<string> terms)
@@ -204,7 +204,7 @@ namespace NTLS.TermExtractor
             {
                 termIds.UnionWith(terms);
             }
-            docToTerms.Add(documentId, terms);
+            docToTerms[documentId] = terms;
         }
 
         public ISet<int> RetrieveCanonicalTermIdsInDoc(int documentId)
